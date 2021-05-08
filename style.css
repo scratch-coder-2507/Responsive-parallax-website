@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px auto;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container .box::before {
+  content: "MOON";
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  font-size: 5.4em;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  font-weight: 700;
+}
+
+.container .box:hover::after {
+  content: "LIGHT";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5.9em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+  opacity: 0.04;
+}
+
+.container .box .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  transform-style: preserve-3d;
+  opacity: 0;
+  z-index: 10;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.8s;
+}
+
+.container .box:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container .box .explore1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: #fff;
+  background: #b92525;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.8s;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.8s;
+}
+
+.container .box:hover .explore1 {
+  bottom: 30px;
+  opacity: 1;
+}
+.container .box .explore2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: #fff;
+  background: #b9b2b2;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.8s;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.8s;
+}
+
+.container .box:hover .explore2 {
+  bottom: 30px;
+  opacity: 1;
+}
+.container .box .explore3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: #fff;
+  background: #ccc933;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.8s;
+  opacity: 0;
+  z-index: 10;
+  transition: 0.8s;
+}
+
+.container .box:hover .explore3 {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container .box .type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 280px;
+  transition: 0.8s;
+  z-index: 12;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.container .box:hover .type {
+  transform: translate3d(-50%, -50%, 100px);
+}
+.container .box .type1 {
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 280px;
+  transition: 0.8s;
+  z-index: 12;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.container .box:hover .type1 {
+  transform: translate3d(-50%, -50%, 100px);
+}
+.container .box .type2 {
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 280px;
+  transition: 0.8s;
+  z-index: 12;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.container .box:hover .type2 {
+  transform: translate3d(-50%, -50%, 100px);
+}

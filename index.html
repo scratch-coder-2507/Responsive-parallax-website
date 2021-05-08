@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Parallax Effect</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Scratch Coder</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Learn More</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Red Moon</h2>
+                <a href="#" class="explore1">Explore</a>
+                <img class="type" src="images/redmoon.png"/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Crecent Moon</h2>
+                <a href="#" class="explore2">Explore</a>
+                <img class="type1" src="images/cre.png"/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Yellow Moon</h2>
+                <a href="#" class="explore3">Explore</a>
+                <img class="type2" src="images/yellowmoon.png"/>
+            </div>
+        </div>
+    </section>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"),{
+            max: 25,
+            speed:400
+        });
+    </script>
+</body>
+</html>
